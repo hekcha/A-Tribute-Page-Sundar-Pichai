@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life & Education of Sundar Pichai</title>
+    <link rel="stylesheet" href="Life.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="images">
+
+        </div>
+        <div class="description">
+            Sundar Pichai was born in Madurai, Tamil Nadu, India. His mother Lakshmi was a stenographer and his father, Regunatha Pichai was an electrical engineer at GEC, the British conglomerate. His father also had a manufacturing plant that produced electrical components. Pichai grew up in a two-room apartment in Ashok Nagar, Chennai and had a Hindu upbringing.
+
+            Pichai completed schooling in Jawahar Vidyalaya, a Central Board of Secondary Education school in Ashok Nagar, Chennai and completed the Class XII from Vana Vani school in the Indian Institute of Technology Madras. He earned his degree from Indian Institute of Technology Kharagpur in metallurgical engineering and is a distinguished alumnus from that institution. He holds an M.S. from Stanford University in material sciences and engineering, and an MBA from the Wharton School of the University of Pennsylvania, where he was named a Siebel Scholar and a Palmer Scholar, respectively.
+            <!-- Refrences: Wikipedia.com -->
+        </div>
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        <script>
+            var cursor =document.querySelector(".cursor");
+            var cursor2 =document.querySelector(".cursor2");
+            document.addEventListener("mousemove" , function(e){
+                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top:" + e.clientY + "px;";
+            })
+        </script>
+
+    </div>
+    
+</body>
+</html>

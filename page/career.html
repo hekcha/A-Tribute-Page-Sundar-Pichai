@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career</title>
+    <link rel="stylesheet" href="career.css">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <div class="images">
+        
+        </div>
+        <div class="description">
+            Pichai worked in engineering and product management at Applied Materials and in management consulting at McKinsey & Company.Pichai joined Google in 2004, where he led the product management and innovation efforts for a suite of Google's client software products, including Google Chrome and Chrome OS, as well as being largely responsible for Google Drive. He went on to oversee the development of other applications such as Gmail and Google Maps. On November 19, 2009, Pichai gave a demonstration of Chrome OS; the Chromebook was released for trial and testing in 2011, and released to the public in 2012. On May 20, 2010, he announced the open-sourcing of the new video codec VP8 by Google and introduced the new video format, WebM.
+
+            On March 13, 2013, Pichai added Android to the list of Google products that he oversaw. Android was formerly managed by Andy Rubin. He was a director of Jive Software from April 2011 to July 30, 2013. Pichai was selected to become the next CEO of Google on August 10, 2015 after previously being appointed Product Chief by CEO, Larry Page. On October 24, 2015 he stepped into the new position at the completion of the formation of Alphabet Inc., the new holding company for the Google company family. 
+            <!-- Refrences: Wikipedia.com -->
+        </div>
+        <div class="cursor"></div>
+        <div class="cursor2"></div>
+
+        <script>
+            var cursor =document.querySelector(".cursor");
+            var cursor2 =document.querySelector(".cursor2");
+            document.addEventListener("mousemove" , function(e){
+                cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top:" + e.clientY + "px;";
+            })
+        </script>
+
+    </div>
+    
+</body>
+</html>

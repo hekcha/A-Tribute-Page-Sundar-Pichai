@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/sundarpichai.jpg);
+    background-size: 762px, 1536px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-weight: initial;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+h1{
+    font-weight: bolder;
+    font-family: 'Recursive', sans-serif;
+    letter-spacing: 4px;
+}
+ .content p{
+     font-size: 70px;
+     padding: auto;
+     text-align: center;
+     align-items: center;
+     font-family: 'Monotype Corsiva';
+    line-height: 26px;
+    width: 700px;
+
+ }
+
+ .cursor{
+     position: fixed;
+     width: 50px;
+     height: 50px;
+     left: 0;
+     top: 0;
+     border: 1px solid white;
+     border-radius:50% ;
+     pointer-events: none;
+     transform: translate(-50%, -50%);
+     transition: -30s;
+ }
+ 
+ .cursor2{
+     position: fixed;
+     width: 8px;
+     height: 8px;
+     left: 0;
+     top: 0;
+     background-color: black;
+     border: 1px solid white;
+     border-radius:50% ;
+     pointer-events: none;
+     transform: translate(-50%, -50%);
+     transition: -15s;
+ }
+
+ .content:hover ~.cursor{
+     transform: translate(-50%, -50%) scale(1.5);
+     background-color: #c6c6c6;
+     opacity: 0.5;
+ }
+ 
+ .content:hover ~.cursor2{
+     opacity: 0;
+ }
+
+ .life{
+    position: absolute;
+    top: 10px;
+    left:15px; 
+    color: whitesmoke;
+    border: 2px solid rgb(219, 209, 209);
+    border-radius: 9px;
+    padding: 10px 10px;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+
+
+ .career{
+    position: absolute;
+    top: 10px;
+    left:300px; 
+    color: white;
+    border: 2px solid rgb(219, 209, 209);
+    border-radius: 9px;
+    padding: 10px 10px;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+/* .follow{
+    position: absolute;
+    top: 10px;
+    left:454px; 
+    color: whitesmoke;
+    border: 2px solid rgb(219, 209, 209);
+    border-radius: 9px;
+    padding: 10px 10px;
+    font-size: 22px;
+    letter-spacing: 4px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+
+} */
+
+.share-button{
+    width: 151px;
+    height: 80px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: absolute;
+    top : 10px;
+    right: 8%;
+    cursor: pointer;
+    transition: .3s linear;
+  }
+  
+  .share-button:hover{
+    transform: scale(1.1);
+  }
+  
+  .share-button span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* padding: 10px 10px; */
+    font-size: 30px;
+    letter-spacing: 4px;
+    /* background: #2d3436; */
+    color: whitesmoke;
+    text-align: center;
+    line-height: 80px;
+    z-index: 999;
+    transition: .6s linear;
+    /* border-radius: 40px; */
+  }
+  
+  .share-button:hover span{
+    transform: translateX(-100%);
+    transition-delay: .3s;
+  }
+  
+  .share-button a{
+    flex: 1;
+    font-size: 26px;
+    color: #2d3436;
+    text-align: center;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.3s linear;
+  }
+  
+  .share-button:hover a{
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .share-button a:nth-of-type(1){
+    transition-delay: 1s;
+  }
+  
+  .share-button a:nth-of-type(2){
+    transition-delay: 0.8s;
+  }
+  
+  .share-button a:nth-of-type(3){
+    transition-delay: 0.6s;
+  }
+  
+  .share-button a:nth-of-type(4){
+    transition-delay: 0.4s;
+  }
+
+a:hover{
+    color: #255784;
+    background-color: #2196f3;
+    box-shadow:  0 0 10px #2196f3, 0 0 40px #2196f3 ,0 0 80px #2196f3 ,0 0 120px #2196f3;
+    transition-delay: 1s;
+}
+
+a span{
+    position: absolute;
+    display: block ;
+}
+
+/* for top */
+
+a span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg , transparent , #1c1e1f);
+}
+a:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+
+/* For right */
+a span:nth-child(2){
+    right: 0;
+    top: -100%;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg , transparent , #1c1e1f);
+}
+a:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+/* For bottom */
+
+a span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg , transparent , #1c1e1f);
+}
+a:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+/* For left */
+a span:nth-child(4){
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 4px;
+    background: linear-gradient(0deg , transparent , #1c1e1f);
+}
+a:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}

@@ -1,0 +1,70 @@
+body{
+    background-color:   #000000
+    ;
+    ;
+}
+
+.images{
+    border: 4px solid rgb(53, 51, 51);
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    left: 10%;
+    top: 10%;
+    background: url(Sundar1.jpg);
+    background-position: center;
+    background-size: 600px, 500px;
+    background-repeat: no-repeat;
+}
+
+.description{
+    font-family: 'Recursive', sans-serif;
+    color: whitesmoke;
+    border-radius: 4px;
+    font-size: 23px;
+    text-align: center;
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 50%;
+    top: 7%;
+
+}
+
+.cursor{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: 0;
+    border: 1px solid white;
+    border-radius:50% ;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: -30s;
+}
+
+.cursor2{
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: 0;
+    background-color: whitesmoke;
+    border: 1px solid white;
+    border-radius:50% ;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: -15s;
+}
+
+.description:hover ~.cursor{
+    transform: translate(-50%, -50%) scale(1.5);
+    background-color: #c6c6c6;
+    opacity: 0.5;
+}
+
+.description:hover ~.cursor2{
+    opacity: 0;
+}
+
